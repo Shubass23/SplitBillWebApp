@@ -1,0 +1,204 @@
+.logo{
+    display: grid;
+    grid-template-columns: 25px 90px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 2px;
+}
+
+.logo > p{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+}
+
+.logo > img {
+    height: 20px;
+}
+
+header{
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+}
+
+.header-tab{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    flex-basis: 1000px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-page{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    color: whitesmoke;
+}
+
+.header-page > * {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.authtenticate{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.authtenticate > *{
+    padding: 8px 10px;
+    margin: 0px 5px;
+    border-radius: 6px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.login-button{
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+.signup-button{
+    background-color: #ffc107;
+    border: none;
+    color: black;
+}
+
+.menu-button{
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    display: none;
+}
+
+.heroes{
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    padding: 0px 30px;
+    background-color: #212529;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroes > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    object-fit: cover;
+}
+
+.heroes-content{
+    font-size: 25px;
+    color: whitesmoke;
+    position: relative;
+    flex-basis: 1000px;
+}
+
+.heroes-content > * {
+    margin: 20px 0px;
+}
+
+
+.heroes > .introduction{
+    flex-basis: 1000px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.expenses{
+    padding: 20px 30px;
+    flex-basis: 1000px;
+}
+
+.add-expense-button {
+    background-color: orangered;
+    border-radius: 6px;
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.expenses-list{
+    min-height: 400px;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    margin: 20px 0px;
+}
+
+.expenses-list > h2 {
+    text-align: center;
+}
+
+.footer{
+    height: 10%;
+    background-color: #212529;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.footer > * {
+    margin: 0px;
+    pad: 2px 0px;
+    color: whitesmoke;
+    margin: 5px 20px;
+}
+
+@media (max-width:576px) {
+    .header-page{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+}
+
+@media (max-width:370px) {
+    .login-button{
+        display: none;
+    }
+
+    .signup-button{
+        display: none;
+    }
+}
+
+/* @media (min-width: 990px) {
+    .header-tab{
+        padding: 0% 16%;
+    }
+} */
+
